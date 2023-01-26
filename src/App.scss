@@ -1,0 +1,73 @@
+:root {
+    --font-color: rgba(255, 255, 255, 1);
+    --font-color-trans: rgba(255, 255, 255, 0.7);
+
+    --font-size-sm: 0.875rem; /* 14px */
+    --line-height-sm: 1.25rem; /* 20px */
+
+    --font-size-base: 1rem; /* 16px */
+    --line-height-base: 1.5rem; /* 24px */
+    
+    --font-size-lg:	1.125rem; /* 18px */
+    --line-height-lg: 1.75rem; /* 28px */
+
+    --padding: 10px;
+    --borderRadius: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body, #root, .pageContainer {
+    height: 100%;
+}
+
+body {    
+    background-image: url(./assets/images/fall.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.pageContainer {
+    padding: 0 10px;
+
+    display: grid;
+    grid-template-columns: 2fr 6fr 2fr;
+    grid-template-rows: 1fr 8fr 1fr;
+    grid-template-areas:
+        "top-left top-center top-right"
+        "mid-left mid-center mid-right"
+        "bot-left bot-center bot-right";
+    align-items: center;
+    gap: 20px;
+
+    div {
+        &:nth-child(1) {
+            grid-area: top-left;
+            justify-self: left;
+        }
+        &:nth-child(2) {
+            grid-area: top-right;
+            justify-self: right;
+        }
+        &:nth-child(3) {
+            grid-area: bot-right;
+            justify-self: right;
+        }
+        &:nth-child(4) {
+            grid-area: bot-center;
+            justify-self: center;
+        }
+        &:nth-child(5) {
+            grid-area: bot-left;
+            justify-self: left;
+        }
+        &:nth-child(6) {
+            grid-area: mid-center;
+            justify-self: center;
+        }
+    }
+}

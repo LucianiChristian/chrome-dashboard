@@ -1,8 +1,17 @@
-import './App.css'
+import './App.scss'
+import { BackgroundInfo, Intention, Links, Quote, Settings, Weather } from "./components";
+
 
 function App() {
   return (
-    <h3>Clear</h3>
+    <div className="pageContainer">
+      <Links />
+      <Weather />
+      <Settings />
+      <Quote />
+      <BackgroundInfo />
+      <Intention />
+    </div>
   )
 }
 

@@ -1,0 +1,7 @@
+@import "../../utilities.scss";
+
+.menuContainer {
+    position: absolute;
+
+    @extend .glassContainer;
+}
