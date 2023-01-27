@@ -1,4 +1,3 @@
-import utilStyles from '../../utilities.module.scss';
 import styles from "./Menu.module.scss";
 import { ReactNode } from "react";
 

@@ -27,8 +27,9 @@ html, body, #root, .pageContainer {
 
 body {    
     background-image: url(./assets/images/fall.png);
-    background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .pageContainer {
